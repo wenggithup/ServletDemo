@@ -1,11 +1,3 @@
-##HTTP:
-#概念：Hyper Text Transfer protocol 超文本传输协议
-    * 传输协议：定义了客户端和服务器端通信时，发送数据的格式
-    * 特点：
-            1、基于TCP/IP的高级协议
-            2、默认端口号：80
-            3、基于请求响应模型：一次请求对应一次响应
-            4、无状态的：每次请求之间相互独立，不能交互数据
 #请求消息格式：
     1、请求行：
         请求方式  请求url 请求协议/版本
@@ -60,3 +52,47 @@
                     
         2、其它功能
     
+
+
+## Druid：数据库连接池技术，由阿里巴巴提供
+    * 步骤：
+        1、导入jar包 druid-1.0.9.jar
+        2、通过类加载器引入配置文件
+        3、通过druid工厂创建连接池对象
+        4、获取链接
+        
+# Spring jdbc
+    Spring框架对jdbc的简单封装，提供类一个jdbcTemplate对象简化jdbc的开发
+* 步骤
+    1、导入jar包
+    2、创建jdbcTemplate对象，依赖于dataSource
+    3、调用JdbcTemplate的方法完成CURD的操作
+        * update（）执行DML语句，增删改
+        * queryForMap：查询将结果集封装为map集合
+        * queryForList（）：查询将结果集封装为list集合
+        * query（）：查询结果，将结果封装为javabean对象
+        * queryForObject：查询结果，将结果封装为对象
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
