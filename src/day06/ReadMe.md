@@ -84,3 +84,8 @@
     3、服务器输出字节流数据写到浏览器
     4、校验码
 ## ServletContext
+    1、获取：this.getServletContext();或者request.getServletContext()
+    2、方法：
+        1、getRealPath（）获取真实路径，tomcat服务器下的真实路径
+        2、getMimeType（）获取文件名称，大类型/小类型  类型与 text/html
+        3、获取元素（getAttrubute setAttribute removeAttribute） 慎用，从服务器开启时就一直存在

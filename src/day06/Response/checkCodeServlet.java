@@ -1,6 +1,7 @@
 package day06.Response;
 
 import javax.imageio.ImageIO;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.ServletOutputStream;
 import javax.servlet.annotation.WebServlet;
@@ -25,6 +26,9 @@ public class checkCodeServlet extends HttpServlet {
         int height=50;
         BufferedImage image=new BufferedImage(width,height,BufferedImage.TYPE_INT_RGB);
         ImageIO.write(image,"jpg",response.getOutputStream());
+        ServletContext servletContext = this.getServletContext();
+        ServletContext servletContext1=request.getServletContext();
+
 
     }
 }
