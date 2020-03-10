@@ -1,4 +1,4 @@
-##请求消息格式：
+## 请求消息格式：
     1、请求行：
         请求方式  请求url 请求协议/版本
         例子：GET/login.html Http/1.1
@@ -61,7 +61,7 @@
         3、通过druid工厂创建连接池对象
         4、获取链接
         
-##Spring jdbc
+## Spring jdbc
     Spring框架对jdbc的简单封装，提供类一个jdbcTemplate对象简化jdbc的开发
     * 步骤
     1、导入jar包
