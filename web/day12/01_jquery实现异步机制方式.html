@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery</title>
+    <!--引入jquery-->
+    <script src="/ServletDemo/bootStrap/jquery/jquery-3.3.1.js"></script>
+    <script>
+        function fun() {
+          $.ajax({
+              url:"ajaxServlet",
+              type:"POST",
+              //data:"username=jack&age=23"
+              data:({"username":"jack","age":23}),
+              success:function (data) {
+                  alert(data)
+              }
+          })
+        }
+    </script>
+</head>
+<body>
+    <input type="text" value="发送异步请求" onclick="fun();">
+</body>
+</html>
